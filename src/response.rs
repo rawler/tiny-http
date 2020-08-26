@@ -291,7 +291,7 @@ where
             headers: self.headers,
             status_code: self.status_code,
             data_length,
-            chunked_threshold: None,
+            chunked_threshold: self.chunked_threshold,
         }
     }
 
@@ -449,7 +449,7 @@ where
             status_code: self.status_code,
             headers: self.headers,
             data_length: self.data_length,
-            chunked_threshold: None,
+            chunked_threshold: self.chunked_threshold,
         }
     }
 }
